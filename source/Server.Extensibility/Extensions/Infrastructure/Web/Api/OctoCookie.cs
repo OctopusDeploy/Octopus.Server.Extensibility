@@ -40,11 +40,11 @@ namespace Octopus.Server.Extensibility.Extensions.Infrastructure.Web.Api
         public bool Secure { get; set; }
 
         /// <summary>
-        /// Gets or sets the value for the SameSite attribute of the cookie. The default value is
-        /// <see cref="SameSiteMode.Lax" />
+        /// Gets or sets the value for the SameSite attribute of the cookie.
+        /// If not set (null), the web portal's configuration is used to determine the value.
         /// </summary>
         /// <returns>The <see cref="SameSiteMode" /> representing the enforcement mode of the cookie.</returns>
-        public SameSiteMode SameSite { get; set; } = SameSiteMode.Lax;
+        public SameSiteMode? SameSite { get; set; }
 
         /// <summary>
         /// Gets or sets a value that indicates whether a cookie is accessible by client-side script.

@@ -26,7 +26,7 @@
     <None Remove="Extensions\Infrastructure\Web\Content\**" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="6.0.0" />
+    <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="Octopus.TinyTypes" Version="0.1.22" />
     <PackageReference Include="Octopus.Versioning" Version="4.3.2" />
     <PackageReference Include="System.Security.Principal" Version="4.3.0" />
